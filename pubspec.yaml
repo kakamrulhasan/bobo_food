@@ -24,3 +24,9 @@ flutter:
   assets:
     - assets/image/
     - assets/icon/
+
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset:    assets/fonts/Poppins-VariableFont_wght.otf
