@@ -8,4 +8,9 @@ class RouteName {
   static const String forgetByEmailScr = '/forgetByEmailScreen';
   static const String forgetPassByOtp = '/forgetPassByOtp';
   static const String newPassAddForgetScr = '/newPassAddForgetScreen';
+  static const String signupForgetByEmailScr = '/signupForgetByEmailScreen';
+  static const String signupForgetPassByOtp = '/signupForgetPassByOtp';
+  static const String createNewProfile = '/createNewProfileScreen';
+  static const String addNewAddress = '/addNewAddressScreen';
+  static const String subScriptionScreen = '/subScriptionScreen';
 }
