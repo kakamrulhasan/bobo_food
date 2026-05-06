@@ -3,11 +3,20 @@ import 'package:flutter/material.dart';
 class ColorManager {
   ColorManager._();
   static const Color primary = Colors.white;
+  static const Color primary600 = Color(0xFF54A312);
+  static const Color primary700 = Color(0xFF408308);
   static const Color secondary = Colors.black;
+  static const Color greenColor = Colors.green;
   static const Color primaryGreen = Color(0xFF54A312);
   static const Color lightGreenBg = Color(0xFFECF1E8);
   static const Color transparentColor = Colors.transparent;
   static const Color darkOliveText = Color(0xFF363A33);
+  static const Color typography200 = Color(0xFF91958E);
   static const Color typography400 = Color(0xFF60655C);
+  static const Color typography500 = Color(0xFF363A33);
   static const Color primary100 = Color(0xFFECF1E8);
+  static const Color greyColor = Colors.grey;
+  static const Color grey200 = Color(0xFFE8EBE6);
+  static const Color blueColor = Colors.blue;
+  static const Color redColor = Colors.red;
 }
