@@ -40,7 +40,7 @@ class _CreateNewPassScreenState extends State<CreateNewPassScreen> {
               ),
               Spacer(),
               CustomButton(
-                text: 'Log in',
+                text: 'Continue',
                 onPressed: () {
                   Navigator.pushNamedAndRemoveUntil(
                     context,
