@@ -1,9 +1,12 @@
+import 'dart:developer';
+
 import 'package:bobo_food/core/constansts/color_manager.dart';
 import 'package:bobo_food/core/constansts/style_manager.dart';
 import 'package:bobo_food/core/route/route_name.dart';
 import 'package:bobo_food/presentation/widgets/custom_button.dart';
 import 'package:bobo_food/presentation/widgets/custom_text_field.dart';
 import 'package:bobo_food/presentation/widgets/custom_title.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -84,6 +87,15 @@ class _SignInScreenState extends State<SignInScreen> {
                                 decorationColor: ColorManager.blueColor,
                                 decorationThickness: 3.5,
                               ),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              log('signup clicked');
+                              Navigator.pushNamedAndRemoveUntil(
+                                context,
+                                RouteName.signupScreen,
+                                (route) => false,
+                              );
+                            },
                         ),
                       ],
                     ),
