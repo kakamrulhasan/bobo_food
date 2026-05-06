@@ -18,6 +18,7 @@ class ColorManager {
   static const Color typographyDisabled = Color(0xFF3A3533);
   static const Color primary100 = Color(0xFFECF1E8);
   static const Color greyColor = Colors.grey;
+  static const Color grey50 = Color(0xFFF9FAF8);
   static const Color grey100 = Color(0xFFF4F7F2);
   static const Color grey200 = Color(0xFFE8EBE6);
   static const Color grey500 = Color(0xFF91958E);
