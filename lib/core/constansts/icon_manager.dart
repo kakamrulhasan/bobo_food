@@ -11,4 +11,9 @@ class IconManager {
   static String birthdayGirlLight = '$baseUrl/Birthday_girl_light.svg';
   // =================== Universal Logo =====================
   static String boboIcon = '$baseUrl/bobo.svg';
+  // ======================== Arrow =========================
+  static String arrowBack = '$baseUrl/arrowBack.svg';
+  // ====================== Eye Icon ========================
+  static String eyeOpen = '$baseUrl/openEye.svg';
+  static String eyeClose = '$baseUrl/closeEye.svg';
 }

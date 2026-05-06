@@ -55,7 +55,7 @@ class _OnBoardingScreenState extends ConsumerState<OnBoardingScreen> {
   void finish() {
     Navigator.pushNamedAndRemoveUntil(
       context,
-      RouteName.homeScreen,
+      RouteName.loginScreen,
       (route) => false,
     );
   }
@@ -67,15 +67,15 @@ class _OnBoardingScreenState extends ConsumerState<OnBoardingScreen> {
     return Scaffold(
       backgroundColor: ColorManager.primary,
       body: Padding(
-        padding: EdgeInsets.all(18.0.w),
+        padding: EdgeInsets.all(12.0.w),
         child: Stack(
           children: [
             // ============== App Logo / Background ===============
             Positioned(
-              top: 80,
-              left: 20,
-              right: 20,
-              child: SvgPicture.asset(IconManager.boboIcon, height: 40),
+              top: 80.h,
+              left: 20.w,
+              right: 20.w,
+              child: SvgPicture.asset(IconManager.boboIcon, height: 40.h),
             ),
 
             // =============== PageView ================
@@ -98,7 +98,7 @@ class _OnBoardingScreenState extends ConsumerState<OnBoardingScreen> {
                           SvgPicture.asset(
                             images[index],
                             fit: BoxFit.contain,
-                            width: 300,
+                            width: 300.w,
                           ),
                           SizedBox(height: 15.h),
                           Text(
@@ -127,7 +127,7 @@ class _OnBoardingScreenState extends ConsumerState<OnBoardingScreen> {
             ),
             // ================= Indicator =================
             Positioned(
-              bottom: 150,
+              bottom: 150.h,
               left: 0,
               right: 0,
               child: Center(
@@ -146,9 +146,9 @@ class _OnBoardingScreenState extends ConsumerState<OnBoardingScreen> {
 
             // =============== Bottom Button =============
             Positioned(
-              bottom: 50,
-              left: 20,
-              right: 20,
+              bottom: 50.h,
+              left: 20.w,
+              right: 20.w,
               child: Row(
                 children: [
                   CustomButton(
@@ -184,7 +184,7 @@ class _OnBoardingScreenState extends ConsumerState<OnBoardingScreen> {
                       child: Text(
                         currentIndex == images.length - 1
                             ? "Get Started"
-                            : "Continue",
+                            : "Next",
                         style: getBoldStyle24(
                           color: ColorManager.primary,
                           fontSize: 15,
@@ -194,19 +194,6 @@ class _OnBoardingScreenState extends ConsumerState<OnBoardingScreen> {
                     ),
                   ),
                 ],
-              ),
-            ),
-
-            // =============== Skip Button =============
-            Positioned(
-              top: 50,
-              right: 20,
-              child: TextButton(
-                onPressed: skip,
-                child: const Text(
-                  "Skip",
-                  style: TextStyle(color: Colors.white),
-                ),
               ),
             ),
           ],

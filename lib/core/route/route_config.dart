@@ -8,9 +8,20 @@ class AppRouter {
       case RouteName.homeScreen:
         return MaterialPageRoute(builder: (context) => const HomeScreen());
       case RouteName.onBoardingScreen:
-        return MaterialPageRoute(
-          builder: (context) => const OnBoardingScreen(),
-        );
+        return MaterialPageRoute(builder: (context) => OnBoardingScreen());
+      case RouteName.loginScreen:
+        return MaterialPageRoute(builder: (context) => const SignInScreen());
+      case RouteName.signupScreen:
+        return MaterialPageRoute(builder: (context) => const SignUpScreen());
+      case RouteName.forgetScreen:
+        return MaterialPageRoute(builder: (context) => OnBoardingScreen());
+      case RouteName.forgetByEmailScr:
+        return MaterialPageRoute(builder: (context) => ForgetByEmail());
+      case RouteName.forgetPassByOtp:
+        return MaterialPageRoute(builder: (context) => ForgetOtpScreen());
+      case RouteName.newPassAddForgetScr:
+        return MaterialPageRoute(builder: (context) => CreateNewPassScreen());
+
       default:
         return MaterialPageRoute(
           builder: (context) =>
