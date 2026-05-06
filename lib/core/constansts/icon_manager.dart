@@ -20,4 +20,7 @@ class IconManager {
   // ==================== Common Icon =======================
   static String person = '$baseUrl/person.svg';
   static String camera = '$baseUrl/camera.svg';
+  static String cancel = '$baseUrl/cancel.svg';
+  static String correct = '$baseUrl/correct.svg';
+  static String circle = '$baseUrl/circle.svg';
 }

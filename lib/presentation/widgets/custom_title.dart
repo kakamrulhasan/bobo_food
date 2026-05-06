@@ -7,7 +7,8 @@ import '../../core/constansts/style_manager.dart';
 class CustomTitle extends StatelessWidget {
   final String title;
   final String? subtitle;
-  final double? fontSize;
+  final double? fontSizeTitle;
+  final double? fontSizeSubTitle;
   final FontWeight? fontWeight;
   final Color? color;
 
@@ -15,9 +16,10 @@ class CustomTitle extends StatelessWidget {
     super.key,
     required this.title,
     this.subtitle,
-    this.fontSize,
+    this.fontSizeTitle,
     this.fontWeight,
     this.color,
+    this.fontSizeSubTitle,
   });
 
   @override
@@ -30,7 +32,7 @@ class CustomTitle extends StatelessWidget {
           title,
           style: getBoldStyle24(
             color: color ?? ColorManager.typography500,
-            fontSize: fontSize ?? 32.sp,
+            fontSize: fontSizeTitle ?? 32.sp,
 
             fontWeight: fontWeight ?? FontWeight.w700,
           ),
@@ -43,7 +45,7 @@ class CustomTitle extends StatelessWidget {
             subtitle!,
             style: getRegularStyle16_400(
               color: ColorManager.typography400,
-              fontSize: 15.sp,
+              fontSize: fontSizeSubTitle ?? 15.sp,
             ),
           ),
         ],

@@ -90,10 +90,9 @@ class _SignInScreenState extends State<SignInScreen> {
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
                               log('signup clicked');
-                              Navigator.pushNamedAndRemoveUntil(
+                              Navigator.pushNamed(
                                 context,
                                 RouteName.signupScreen,
-                                (route) => false,
                               );
                             },
                         ),
