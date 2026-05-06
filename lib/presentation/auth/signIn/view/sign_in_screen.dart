@@ -1,8 +1,9 @@
 import 'package:bobo_food/core/constansts/color_manager.dart';
 import 'package:bobo_food/core/constansts/style_manager.dart';
+import 'package:bobo_food/core/route/route_name.dart';
 import 'package:bobo_food/presentation/widgets/custom_button.dart';
-import 'package:bobo_food/presentation/widgets/custom_header.dart';
 import 'package:bobo_food/presentation/widgets/custom_text_field.dart';
+import 'package:bobo_food/presentation/widgets/custom_title.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -36,25 +37,23 @@ class _SignInScreenState extends State<SignInScreen> {
                   ),
                 ),
                 SizedBox(height: 25.h),
-                Text(
-                  'Log in to your account',
-                  style: getBoldStyle24(
-                    color: ColorManager.typography500,
-                    fontSize: 32.sp,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
+                CustomTitle(title: 'Log in to your account'),
                 SizedBox(height: 14.h),
                 CustomTextField(hintText: 'email address'),
                 SizedBox(height: 5.h),
                 CustomTextField(hintText: 'password', isPassword: true),
                 SizedBox(height: 10.h),
                 Center(
-                  child: Text(
-                    'forgot password',
-                    style: getBoldStyle24(
-                      color: ColorManager.primary700,
-                      fontSize: 15.sp,
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, RouteName.forgetByEmailScr);
+                    },
+                    child: Text(
+                      'forgot password',
+                      style: getBoldStyle24(
+                        color: ColorManager.primary700,
+                        fontSize: 15.sp,
+                      ),
                     ),
                   ),
                 ),

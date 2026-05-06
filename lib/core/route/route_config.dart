@@ -15,6 +15,12 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => const SignUpScreen());
       case RouteName.forgetScreen:
         return MaterialPageRoute(builder: (context) => OnBoardingScreen());
+      case RouteName.forgetByEmailScr:
+        return MaterialPageRoute(builder: (context) => ForgetByEmail());
+      case RouteName.forgetPassByOtp:
+        return MaterialPageRoute(builder: (context) => ForgetOtpScreen());
+      case RouteName.newPassAddForgetScr:
+        return MaterialPageRoute(builder: (context) => CreateNewPassScreen());
 
       default:
         return MaterialPageRoute(
