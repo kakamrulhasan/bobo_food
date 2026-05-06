@@ -21,6 +21,16 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => ForgetOtpScreen());
       case RouteName.newPassAddForgetScr:
         return MaterialPageRoute(builder: (context) => CreateNewPassScreen());
+      case RouteName.signupForgetByEmailScr:
+        return MaterialPageRoute(builder: (context) => SignUpForgetByEmail());
+      case RouteName.signupForgetPassByOtp:
+        return MaterialPageRoute(builder: (context) => SignUpForgetOtpScreen());
+      case RouteName.createNewProfile:
+        return MaterialPageRoute(builder: (context) => CreateNewProfile());
+      case RouteName.addNewAddress:
+        return MaterialPageRoute(builder: (context) => AddNewAddress());
+      case RouteName.subScriptionScreen:
+        return MaterialPageRoute(builder: (context) => SubScriptionScreen());
 
       default:
         return MaterialPageRoute(

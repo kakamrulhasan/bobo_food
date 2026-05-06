@@ -69,7 +69,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ],
                 ),
                 SizedBox(height: 220.h),
-                CustomButton(text: 'Create account', onPressed: () {}),
+                CustomButton(
+                  text: 'Create account',
+                  onPressed: () {
+                    Navigator.pushNamed(
+                      context,
+                      RouteName.signupForgetByEmailScr,
+                    );
+                  },
+                ),
                 SizedBox(height: 25.h),
                 Center(
                   child: RichText(

@@ -13,7 +13,11 @@ class IconManager {
   static String boboIcon = '$baseUrl/bobo.svg';
   // ======================== Arrow =========================
   static String arrowBack = '$baseUrl/arrowBack.svg';
+  static String arrowRight = '$baseUrl/arrowRight.svg';
   // ====================== Eye Icon ========================
   static String eyeOpen = '$baseUrl/openEye.svg';
   static String eyeClose = '$baseUrl/closeEye.svg';
+  // ==================== Common Icon =======================
+  static String person = '$baseUrl/person.svg';
+  static String camera = '$baseUrl/camera.svg';
 }

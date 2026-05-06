@@ -8,14 +8,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pinput/pinput.dart';
 
-class ForgetOtpScreen extends StatefulWidget {
-  const ForgetOtpScreen({super.key});
+class SignUpForgetOtpScreen extends StatefulWidget {
+  const SignUpForgetOtpScreen({super.key});
 
   @override
-  State<ForgetOtpScreen> createState() => _ForgetOtpScreenState();
+  State<SignUpForgetOtpScreen> createState() => _SignUpForgetOtpScreenState();
 }
 
-class _ForgetOtpScreenState extends State<ForgetOtpScreen> {
+class _SignUpForgetOtpScreenState extends State<SignUpForgetOtpScreen> {
   late final TextEditingController pinController;
   @override
   void initState() {
@@ -56,7 +56,7 @@ class _ForgetOtpScreenState extends State<ForgetOtpScreen> {
               CustomHeader(),
               SizedBox(height: 25.h),
               CustomTitle(
-                title: 'Forget your password',
+                title: 'Verify your new account',
                 subtitle:
                     'Enter the verification code sent to your email sample@example.com',
               ),
@@ -99,7 +99,7 @@ class _ForgetOtpScreenState extends State<ForgetOtpScreen> {
                   text: TextSpan(
                     children: [
                       TextSpan(
-                        text: "Didn't received the code? 00:00 ",
+                        text: "Didn't received the code? 00:20 ",
                         style: getRegularStyle16_400(
                           color: ColorManager.typography400,
                           fontSize: 15.sp,
@@ -111,11 +111,11 @@ class _ForgetOtpScreenState extends State<ForgetOtpScreen> {
                             getSemiBoldStyle22(
                               fontWeight: FontWeight.w600,
 
-                              color: ColorManager.typography500,
+                              color: ColorManager.typography100,
                               fontSize: 15.sp,
                             ).copyWith(
                               decoration: TextDecoration.underline,
-                              decorationColor: ColorManager.blueColor,
+                              decorationColor: ColorManager.typography100,
                               decorationThickness: 3.5,
                             ),
                       ),
@@ -127,7 +127,7 @@ class _ForgetOtpScreenState extends State<ForgetOtpScreen> {
               CustomButton(
                 text: 'Continue',
                 onPressed: () {
-                  Navigator.pushNamed(context, RouteName.newPassAddForgetScr);
+                  Navigator.pushNamed(context, RouteName.createNewProfile);
                 },
               ),
             ],
