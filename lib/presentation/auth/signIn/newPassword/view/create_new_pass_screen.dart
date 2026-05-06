@@ -10,6 +10,6 @@ class CreateNewPassScreen extends StatefulWidget {
 class _CreateNewPassScreenState extends State<CreateNewPassScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold();
   }
 }
