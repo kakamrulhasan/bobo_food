@@ -31,6 +31,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => AddNewAddress());
       case RouteName.subScriptionScreen:
         return MaterialPageRoute(builder: (context) => SubScriptionScreen());
+      case RouteName.bottomNavScreen:
+        return MaterialPageRoute(builder: (context) => BottomNavScreen());
 
       default:
         return MaterialPageRoute(
