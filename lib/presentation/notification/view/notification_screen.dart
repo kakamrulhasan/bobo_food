@@ -5,7 +5,6 @@ import 'package:flutter_svg/svg.dart';
 import '../../../core/constansts/color_manager.dart';
 import '../../../core/constansts/icon_manager.dart';
 import '../../../core/constansts/style_manager.dart';
-import '../../widgets/custom_button.dart';
 import '../../widgets/custom_icon_text_header.dart';
 
 class NotificationScreen extends StatefulWidget {
