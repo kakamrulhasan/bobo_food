@@ -1,6 +1,7 @@
 import 'package:bobo_food/core/constansts/color_manager.dart';
 import 'package:bobo_food/core/constansts/icon_manager.dart';
 import 'package:bobo_food/core/constansts/style_manager.dart';
+import 'package:bobo_food/presentation/home/product/view/product_details.dart';
 import 'package:bobo_food/presentation/widgets/custom_button.dart';
 import 'package:bobo_food/presentation/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Map<String, dynamic>> foodList = [
     {
       "name": "Burger",
+      "rating": 4.5,
       "price": 12.75,
       "image":
           "https://assets.bonappetit.com/photos/5b919cb83d923e31d08fed17/1:1/w_2560%2Cc_limit/basically-burger-1.jpg",
@@ -27,23 +29,27 @@ class _HomeScreenState extends State<HomeScreen> {
     {
       "name": "Cola",
       "price": 8.25,
+      "rating": 4.4,
       "image":
           "https://c8.alamy.com/comp/2AC0854/poznan-pol-sep-5-2019-cans-of-coca-cola-a-carbonated-soft-drink-manufactured-by-the-coca-cola-company-headquartered-in-atlanta-georgia-usa-2AC0854.jpg",
     },
     {
       "name": "Pizza",
+      "rating": 4.2,
       "price": 15.45,
       "image":
           "https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg",
     },
     {
       "name": "Hot Dog",
+      "rating": 5,
       "price": 7,
       "image":
           "https://www.belbrandsfoodservice.com/wp-content/uploads/2018/05/recipe-desktop-merkts-cheesy-hot-dawg.jpg",
     },
     {
       "name": "Fried Chicken",
+      "rating": 4.8,
       "price": 15.75,
       "image": "https://media.timeout.com/images/106296957/image.jpg",
     },
@@ -250,7 +256,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                     padding: EdgeInsets.symmetric(
                                       horizontal: 5,
                                     ),
-                                    margin: EdgeInsets.symmetric(horizontal: 2),
+                                    margin: EdgeInsets.symmetric(
+                                      horizontal: 2.w,
+                                    ),
                                     decoration: BoxDecoration(
                                       color: ColorManager.whiteColor,
                                       borderRadius: BorderRadius.circular(5.r),
@@ -263,7 +271,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                               IconManager.rating,
                                             ),
                                           ),
-                                          const TextSpan(text: " 4.5"),
+                                          TextSpan(
+                                            text: " ${items['rating']}",
+                                            style: getRegularStyle16_400(
+                                              color: ColorManager.typography400,
+                                              fontSize: 15.sp,
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ),
@@ -299,7 +313,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                 Text(''),
                                 Text(''),
                                 InkWell(
-                                  onTap: () {},
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            ProductDetails(foodData: items),
+                                      ),
+                                    );
+                                  },
                                   borderRadius: BorderRadius.circular(50),
                                   child: Container(
                                     padding: EdgeInsets.all(8.w),
