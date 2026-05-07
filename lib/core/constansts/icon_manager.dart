@@ -28,6 +28,11 @@ class IconManager {
   static String burgerBg = '$baseUrl/burgerBg.svg';
   static String add = '$baseUrl/add.svg';
   static String search = '$baseUrl/search.svg';
+  static String love2 = '$baseUrl/love2.svg';
+  static String exit = '$baseUrl/exit.svg';
+  static String fire = '$baseUrl/fire.svg';
+  static String clock = '$baseUrl/clock.svg';
+
   // ===================== Bottom Nav =======================
   static String cart = '$baseUrl/cart.svg';
   static String love = '$baseUrl/love.svg';

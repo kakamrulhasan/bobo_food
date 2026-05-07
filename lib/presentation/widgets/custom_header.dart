@@ -13,27 +13,29 @@ class CustomHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Row(
-          children: [
-            InkWell(
-              onTap: () {
-                Navigator.pop(context);
-              },
-              child: SvgPicture.asset(
+        InkWell(
+          splashColor: ColorManager.transparentColor,
+          highlightColor: ColorManager.transparentColor,
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Row(
+            children: [
+              SvgPicture.asset(
                 IconManager.arrowBack,
                 width: 6.94.w,
                 height: 12.38.h,
               ),
-            ),
-            SizedBox(width: 10.w),
-            Text(
-              'Back',
-              style: getBoldStyle24(
-                color: ColorManager.typography500,
-                fontSize: 15.sp,
+              SizedBox(width: 10.w),
+              Text(
+                'Back',
+                style: getBoldStyle24(
+                  color: ColorManager.typography500,
+                  fontSize: 15.sp,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
 
         Center(
