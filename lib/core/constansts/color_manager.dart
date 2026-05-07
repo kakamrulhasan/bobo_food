@@ -11,6 +11,7 @@ class ColorManager {
   static const Color lightGreenBg = Color(0xFFECF1E8);
   static const Color transparentColor = Colors.transparent;
   static const Color darkOliveText = Color(0xFF363A33);
+  static const Color typographyHeading = Color(0xFF3A3533);
   static const Color typography100 = Color(0xFFB6B8B6);
   static const Color typography200 = Color(0xFF91958E);
   static const Color typography300 = Color(0xFF70756B);
