@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
       "price": 8.25,
       "rating": 4.4,
       "image":
-          "https://c8.alamy.com/comp/2AC0854/poznan-pol-sep-5-2019-cans-of-coca-cola-a-carbonated-soft-drink-manufactured-by-the-coca-cola-company-headquartered-in-atlanta-georgia-usa-2AC0854.jpg",
+          "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2179849363.jpg?c=original",
     },
     {
       "name": "Pizza",
