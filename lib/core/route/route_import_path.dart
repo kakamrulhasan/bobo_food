@@ -5,6 +5,7 @@ import 'package:bobo_food/presentation/auth/signIn/view/sign_in_screen.dart';
 import 'package:bobo_food/presentation/auth/signup/ForgetOTP/view/sign_up_forget_otp_screen.dart';
 import 'package:bobo_food/presentation/auth/signup/addNewAddress/view/add_new_address.dart';
 import 'package:bobo_food/presentation/auth/signup/view/sign_up_screen.dart';
+import 'package:bobo_food/presentation/bottomNav/view/bottom_nav_screen.dart';
 import 'package:bobo_food/presentation/home/view/home_screen.dart';
 import 'package:bobo_food/presentation/onBoarding/view/on_boarding_screen.dart';
 import 'package:bobo_food/presentation/subscription/view/sub_scription_screen.dart';

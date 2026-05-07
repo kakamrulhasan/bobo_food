@@ -13,4 +13,5 @@ class RouteName {
   static const String createNewProfile = '/createNewProfileScreen';
   static const String addNewAddress = '/addNewAddressScreen';
   static const String subScriptionScreen = '/subScriptionScreen';
+  static const String bottomNavScreen = '/bottomNav';
 }

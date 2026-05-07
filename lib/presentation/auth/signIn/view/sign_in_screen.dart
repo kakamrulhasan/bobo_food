@@ -66,7 +66,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   onPressed: () {
                     Navigator.pushNamedAndRemoveUntil(
                       context,
-                      RouteName.homeScreen,
+                      RouteName.bottomNavScreen,
                       (route) => false,
                     );
                   },
