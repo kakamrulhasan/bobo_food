@@ -26,12 +26,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
     },
     {
       "image":
-          'https://thumbs.dreamstime.com/b/unhealthy-fast-food-delivery-menu-featuring-assorted-burgers-cheeseburgers-nuggets-french-fries-soda-high-calorie-low-356045884.jpg',
+          'https://videocdn.cdnpk.net/videos/a1b92608-06f3-54ab-98eb-1b53729e6750/horizontal/thumbnails/large.jpg',
       "name": 'Fast food',
     },
     {
       "image":
-          'https://thumbs.dreamstime.com/b/luxury-seafood-platter-ice-high-angle-shot-showcases-luxurious-arranged-bed-against-dark-background-includes-whole-412163466.jpg',
+          'https://d1w7312wesee68.cloudfront.net/CLqVbJSaHKPCnF644k8-X_-bBdKcO9uGS_n2Kw7Km54/resize:fit:720:720/plain/s3://toasttab/restaurants/restaurant-84843000000000000/menu/images/item-a393e8fe-b7f1-49c9-b023-c840b10a31e8.jpg',
       "name": 'Sea food',
     },
     {
