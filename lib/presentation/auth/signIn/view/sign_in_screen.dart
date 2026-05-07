@@ -61,7 +61,16 @@ class _SignInScreenState extends State<SignInScreen> {
                   ),
                 ),
                 SizedBox(height: 65.h),
-                CustomButton(text: 'Log in', onPressed: () {}),
+                CustomButton(
+                  text: 'Log in',
+                  onPressed: () {
+                    Navigator.pushNamedAndRemoveUntil(
+                      context,
+                      RouteName.homeScreen,
+                      (route) => false,
+                    );
+                  },
+                ),
                 SizedBox(height: 25.h),
                 Center(
                   child: RichText(
