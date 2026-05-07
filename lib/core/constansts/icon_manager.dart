@@ -23,4 +23,13 @@ class IconManager {
   static String cancel = '$baseUrl/cancel.svg';
   static String correct = '$baseUrl/correct.svg';
   static String circle = '$baseUrl/circle.svg';
+  static String rating = '$baseUrl/rating.svg';
+  static String burger = '$baseUrl/burger.svg';
+  static String burgerBg = '$baseUrl/burgerBg.svg';
+  static String add = '$baseUrl/add.svg';
+  // ===================== Bottom Nav =======================
+  static String search = '$baseUrl/search.svg';
+  static String love = '$baseUrl/love.svg';
+  static String home = '$baseUrl/home.svg';
+  static String compass = '$baseUrl/compass.svg';
 }

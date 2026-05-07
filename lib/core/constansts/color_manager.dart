@@ -13,6 +13,7 @@ class ColorManager {
   static const Color darkOliveText = Color(0xFF363A33);
   static const Color typography100 = Color(0xFFB6B8B6);
   static const Color typography200 = Color(0xFF91958E);
+  static const Color typography300 = Color(0xFF70756B);
   static const Color typography400 = Color(0xFF60655C);
   static const Color typography500 = Color(0xFF363A33);
   static const Color typographyDisabled = Color(0xFF3A3533);
