@@ -25,11 +25,18 @@ class CustomHeader extends StatelessWidget {
       children: [
         // =========== Leading Section =============
         leadTitle != null
-            ? Text(
-                leadTitle!,
-                style: getBoldStyle24(
-                  color: ColorManager.typography400,
-                  fontSize: 15.sp,
+            ? InkWell(
+                splashColor: ColorManager.transparentColor,
+                highlightColor: ColorManager.transparentColor,
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: Text(
+                  leadTitle!,
+                  style: getBoldStyle24(
+                    color: ColorManager.typography400,
+                    fontSize: 15.sp,
+                  ),
                 ),
               )
             : InkWell(

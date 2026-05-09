@@ -14,9 +14,6 @@ class OrderPlacedScreen extends StatefulWidget {
 }
 
 class _OrderPlacedScreenState extends State<OrderPlacedScreen> {
-  // Same green color from the checkout screen
-  final Color primaryGreen = const Color(0xFF53A124);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +40,7 @@ class _OrderPlacedScreenState extends State<OrderPlacedScreen> {
                 child: Container(
                   padding: EdgeInsets.all(12.w),
                   decoration: BoxDecoration(
-                    color: primaryGreen,
+                    color: ColorManager.primary600,
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
