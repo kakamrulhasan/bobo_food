@@ -6,7 +6,7 @@ import 'package:bobo_food/presentation/auth/signup/ForgetOTP/view/sign_up_forget
 import 'package:bobo_food/presentation/auth/signup/addNewAddress/view/add_new_address.dart';
 import 'package:bobo_food/presentation/auth/signup/view/sign_up_screen.dart';
 import 'package:bobo_food/presentation/bottomNav/view/bottom_nav_screen.dart';
-import 'package:bobo_food/presentation/cart/addCoupon/view/add_coupon_screen.dart';
+import 'package:bobo_food/presentation/cart/noCoupon/addCoupon/view/add_coupon_screen.dart';
 import 'package:bobo_food/presentation/cart/cartDetails/view/cart_screen.dart';
 import 'package:bobo_food/presentation/cart/checkout/changeAddress/view/change_address_screen.dart';
 import 'package:bobo_food/presentation/cart/checkout/changeCard/view/change_card_screen.dart';
