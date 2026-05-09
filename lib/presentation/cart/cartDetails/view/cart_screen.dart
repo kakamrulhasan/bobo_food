@@ -1,6 +1,7 @@
 import 'package:bobo_food/core/constansts/color_manager.dart';
 import 'package:bobo_food/core/constansts/icon_manager.dart';
 import 'package:bobo_food/core/constansts/style_manager.dart';
+import 'package:bobo_food/core/route/route_name.dart';
 import 'package:bobo_food/presentation/widgets/custom_button.dart';
 import 'package:bobo_food/presentation/widgets/custom_icon_text_header.dart';
 import 'package:bobo_food/presentation/widgets/custom_title.dart';
@@ -137,7 +138,9 @@ class _CartScreenState extends State<CartScreen> {
                     width: 180.w,
                     child: CustomButton(
                       text: 'Proceed to pay',
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, RouteName.noCouponAdded);
+                      },
                     ),
                   ),
                 ],

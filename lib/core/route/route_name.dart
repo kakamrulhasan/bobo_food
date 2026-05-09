@@ -14,5 +14,12 @@ class RouteName {
   static const String addNewAddress = '/addNewAddressScreen';
   static const String subScriptionScreen = '/subScriptionScreen';
   static const String bottomNavScreen = '/bottomNav';
+  static const String emptyCardScreen = '/emptyCard';
   static const String cartScreen = '/cartScreen';
+  static const String addCouponScreen = '/addCoupon';
+  static const String changeAddressScreen = '/changeAddress';
+  static const String changeCardScreen = '/changeCard';
+  static const String checkoutScreen = '/checkoutScreen';
+  static const String noCouponAdded = '/noCoupon';
+  static const String orderPlacedScreen = '/orderPlaced';
 }
