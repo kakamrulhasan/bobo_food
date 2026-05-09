@@ -33,6 +33,8 @@ class IconManager {
   static String fire = '$baseUrl/fire.svg';
   static String clock = '$baseUrl/clock.svg';
   static String emptyBox = '$baseUrl/emptyBox.svg';
+  static String location = '$baseUrl/location.svg';
+  static String creditCard = '$baseUrl/card.svg';
   // ===================== Bottom Nav =======================
   static String cart = '$baseUrl/cart.svg';
   static String love = '$baseUrl/love.svg';
