@@ -14,4 +14,5 @@ class RouteName {
   static const String addNewAddress = '/addNewAddressScreen';
   static const String subScriptionScreen = '/subScriptionScreen';
   static const String bottomNavScreen = '/bottomNav';
+  static const String cartScreen = '/cartScreen';
 }
