@@ -1,6 +1,7 @@
 import 'package:bobo_food/core/constansts/color_manager.dart';
 import 'package:bobo_food/core/constansts/icon_manager.dart';
 import 'package:bobo_food/core/constansts/style_manager.dart';
+import 'package:bobo_food/core/route/route_name.dart';
 import 'package:bobo_food/presentation/home/product/view/product_details.dart';
 import 'package:bobo_food/presentation/widgets/custom_button.dart';
 import 'package:bobo_food/presentation/widgets/custom_text_field.dart';
@@ -76,12 +77,20 @@ class _HomeScreenState extends State<HomeScreen> {
                         fontSize: 17.sp,
                       ).copyWith(letterSpacing: -1),
                     ),
-                    ClipOval(
-                      child: Image.network(
-                        'https://wallpapers.com/images/featured/cool-profile-picture-87h46gcobjl5e4xu.jpg',
-                        width: 40.w,
-                        height: 40.h,
-                        fit: BoxFit.cover,
+                    InkWell(
+                      splashColor: ColorManager.transparentColor,
+
+                      highlightColor: ColorManager.transparentColor,
+                      onTap: () {
+                        Navigator.pushNamed(context, RouteName.profileScreen);
+                      },
+                      child: ClipOval(
+                        child: Image.network(
+                          'https://wallpapers.com/images/featured/cool-profile-picture-87h46gcobjl5e4xu.jpg',
+                          width: 40.w,
+                          height: 40.h,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ],

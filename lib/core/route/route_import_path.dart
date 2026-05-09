@@ -16,6 +16,7 @@ import 'package:bobo_food/presentation/cart/orederPlaced/view/order_placed_scree
 import 'package:bobo_food/presentation/cart/view/cart_empty_screen.dart';
 import 'package:bobo_food/presentation/home/view/home_screen.dart';
 import 'package:bobo_food/presentation/onBoarding/view/on_boarding_screen.dart';
+import 'package:bobo_food/presentation/profile/view/profile_screen.dart';
 import 'package:bobo_food/presentation/subscription/view/sub_scription_screen.dart';
 import 'package:flutter/material.dart';
 import '../../presentation/auth/signup/ForgetByEmail/view/sign_up_forget_by_email.dart';

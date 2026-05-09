@@ -22,4 +22,5 @@ class RouteName {
   static const String checkoutScreen = '/checkoutScreen';
   static const String noCouponAdded = '/noCoupon';
   static const String orderPlacedScreen = '/orderPlaced';
+  static const String profileScreen = '/profileScreen';
 }
