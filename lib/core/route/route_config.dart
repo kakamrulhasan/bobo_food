@@ -35,6 +35,20 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => BottomNavScreen());
       case RouteName.cartScreen:
         return MaterialPageRoute(builder: (context) => CartScreen());
+      case RouteName.emptyCardScreen:
+        return MaterialPageRoute(builder: (context) => CartEmptyScreen());
+      case RouteName.addCouponScreen:
+        return MaterialPageRoute(builder: (context) => AddCouponScreen());
+      case RouteName.changeAddressScreen:
+        return MaterialPageRoute(builder: (context) => ChangeAddressScreen());
+      case RouteName.changeCardScreen:
+        return MaterialPageRoute(builder: (context) => ChangeCardScreen());
+      case RouteName.checkoutScreen:
+        return MaterialPageRoute(builder: (context) => CheckoutScreen());
+      case RouteName.noCouponAdded:
+        return MaterialPageRoute(builder: (context) => NoCouponAddedScreen());
+      case RouteName.orderPlacedScreen:
+        return MaterialPageRoute(builder: (context) => OrderPlacedScreen());
 
       default:
         return MaterialPageRoute(

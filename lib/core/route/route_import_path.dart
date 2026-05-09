@@ -6,7 +6,14 @@ import 'package:bobo_food/presentation/auth/signup/ForgetOTP/view/sign_up_forget
 import 'package:bobo_food/presentation/auth/signup/addNewAddress/view/add_new_address.dart';
 import 'package:bobo_food/presentation/auth/signup/view/sign_up_screen.dart';
 import 'package:bobo_food/presentation/bottomNav/view/bottom_nav_screen.dart';
-import 'package:bobo_food/presentation/cart/cart/view/cart_screen.dart';
+import 'package:bobo_food/presentation/cart/addCoupon/view/add_coupon_screen.dart';
+import 'package:bobo_food/presentation/cart/cartDetails/view/cart_screen.dart';
+import 'package:bobo_food/presentation/cart/checkout/changeAddress/view/change_address_screen.dart';
+import 'package:bobo_food/presentation/cart/checkout/changeCard/view/change_card_screen.dart';
+import 'package:bobo_food/presentation/cart/checkout/view/checkout_screen.dart';
+import 'package:bobo_food/presentation/cart/noCoupon/view/no_coupon_added_screen.dart';
+import 'package:bobo_food/presentation/cart/orederPlaced/view/order_placed_screen.dart';
+import 'package:bobo_food/presentation/cart/view/cart_empty_screen.dart';
 import 'package:bobo_food/presentation/home/view/home_screen.dart';
 import 'package:bobo_food/presentation/onBoarding/view/on_boarding_screen.dart';
 import 'package:bobo_food/presentation/subscription/view/sub_scription_screen.dart';
