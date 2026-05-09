@@ -49,6 +49,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => NoCouponAddedScreen());
       case RouteName.orderPlacedScreen:
         return MaterialPageRoute(builder: (context) => OrderPlacedScreen());
+      case RouteName.profileScreen:
+        return MaterialPageRoute(builder: (context) => ProfileScreen());
 
       default:
         return MaterialPageRoute(

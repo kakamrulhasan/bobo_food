@@ -36,6 +36,11 @@ class IconManager {
   static String location = '$baseUrl/location.svg';
   static String creditCard = '$baseUrl/card.svg';
   static String coupon = '$baseUrl/coupon.svg';
+  static String moon = '$baseUrl/moon.svg';
+  static String list = '$baseUrl/list.svg';
+  static String profile = '$baseUrl/profile.svg';
+  static String settings = '$baseUrl/settings.svg';
+  static String subscription = '$baseUrl/subscription.svg';
   // ===================== Bottom Nav =======================
   static String cart = '$baseUrl/cart.svg';
   static String love = '$baseUrl/love.svg';
