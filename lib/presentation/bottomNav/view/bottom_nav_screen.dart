@@ -2,7 +2,7 @@ import 'dart:math' as math;
 
 import 'package:bobo_food/core/constansts/color_manager.dart';
 import 'package:bobo_food/core/constansts/icon_manager.dart';
-import 'package:bobo_food/presentation/cart/view/cart_screen.dart';
+import 'package:bobo_food/presentation/cart/view/cart_empty_screen.dart';
 import 'package:bobo_food/presentation/explore/view/explore_screen.dart';
 import 'package:bobo_food/presentation/home/view/home_screen.dart';
 import 'package:bobo_food/presentation/notification/view/notification_screen.dart';
@@ -25,7 +25,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   final pages = [
     const HomeScreen(),
     const ExploreScreen(),
-    const CartScreen(),
+    const CartEmptyScreen(),
     const FavoriteScreen(),
     const NotificationScreen(),
   ];

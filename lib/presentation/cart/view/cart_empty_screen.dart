@@ -1,20 +1,21 @@
 import 'package:bobo_food/core/constansts/color_manager.dart';
 import 'package:bobo_food/core/constansts/icon_manager.dart';
 import 'package:bobo_food/core/constansts/style_manager.dart';
+import 'package:bobo_food/core/route/route_name.dart';
 import 'package:bobo_food/presentation/widgets/custom_button.dart';
 import 'package:bobo_food/presentation/widgets/custom_icon_text_header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class CartScreen extends StatefulWidget {
-  const CartScreen({super.key});
+class CartEmptyScreen extends StatefulWidget {
+  const CartEmptyScreen({super.key});
 
   @override
-  State<CartScreen> createState() => _CartScreenState();
+  State<CartEmptyScreen> createState() => _CartEmptyScreenState();
 }
 
-class _CartScreenState extends State<CartScreen> {
+class _CartEmptyScreenState extends State<CartEmptyScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,7 +62,12 @@ class _CartScreenState extends State<CartScreen> {
               SizedBox(
                 width: 120.w,
                 height: 40.h,
-                child: CustomButton(text: 'Explore', onPressed: () {}),
+                child: CustomButton(
+                  text: 'Explore',
+                  onPressed: () {
+                    Navigator.pushNamed(context, RouteName.cartScreen);
+                  },
+                ),
               ),
               Spacer(),
             ],
