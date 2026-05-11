@@ -3,6 +3,7 @@ import 'package:bobo_food/core/constansts/icon_manager.dart';
 import 'package:bobo_food/core/constansts/style_manager.dart';
 import 'package:bobo_food/core/route/route_name.dart';
 import 'package:bobo_food/presentation/widgets/custom_item.dart';
+import 'package:bobo_food/presentation/widgets/custom_toggle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -15,7 +16,7 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-  bool _isDarkMode = false;
+  //bool _isDarkMode = false;
 
   @override
   Widget build(BuildContext context) {
@@ -174,39 +175,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
               SizedBox(height: 16.h),
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
-                decoration: BoxDecoration(
-                  color: ColorManager.grey50,
-                  borderRadius: BorderRadius.circular(12.r),
-                ),
-                child: Row(
-                  children: [
-                    SvgPicture.asset(IconManager.moon),
-                    SizedBox(width: 16.w),
-                    Text(
-                      "Dark mode",
-                      style: getRegularStyle16_400(
-                        color: ColorManager.typography500,
-                        fontSize: 15.sp,
-                      ),
-                    ),
-                    const Spacer(),
-                    Switch(
-                      value: _isDarkMode,
-                      onChanged: (value) {
-                        setState(() {
-                          _isDarkMode = value;
-                        });
-                      },
-                      activeColor: ColorManager.grey100,
-                      activeTrackColor: ColorManager.primary600,
-                      inactiveThumbColor: ColorManager.grey400,
-                      inactiveTrackColor: ColorManager.grey100,
-                    ),
-                  ],
-                ),
-              ),
+              CustomToggle(showIcon: true, title: 'Dark mode'),
               SizedBox(height: 40.h),
             ],
           ),

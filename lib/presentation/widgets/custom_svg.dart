@@ -1,3 +1,4 @@
+import 'package:bobo_food/core/constansts/color_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -15,7 +16,9 @@ class CustomSvg extends StatelessWidget {
       decoration: BoxDecoration(borderRadius: radius),
       width: width,
       height: height,
-      child: icon != null ? SvgPicture.asset(icon!) : const SizedBox(),
+      child: icon != null
+          ? SvgPicture.asset(icon!, color: ColorManager.grey600)
+          : const SizedBox(),
     );
   }
 }

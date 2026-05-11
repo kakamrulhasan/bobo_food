@@ -29,4 +29,7 @@ class RouteName {
   static const String myOrderScreen = '/myOrderScreen';
   static const String paymentScreen = '/paymentScreen';
   static const String settingsScreen = '/settingsScreen';
+  static const String addCardScreen = '/addCardScreen';
+  static const String editCardScreen = '/editCardScreen';
+  static const String editAddressScreen = '/editAddressScreen';
 }

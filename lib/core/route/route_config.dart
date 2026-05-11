@@ -63,6 +63,12 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => PaymentScreen());
       case RouteName.settingsScreen:
         return MaterialPageRoute(builder: (context) => SettingsScreen());
+      case RouteName.addCardScreen:
+        return MaterialPageRoute(builder: (context) => AddCardScreen());
+      case RouteName.editCardScreen:
+        return MaterialPageRoute(builder: (context) => EditCardScreen());
+      case RouteName.editAddressScreen:
+        return MaterialPageRoute(builder: (context) => EditAddressScreen());
 
       default:
         return MaterialPageRoute(
