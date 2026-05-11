@@ -1,6 +1,8 @@
 import 'package:bobo_food/core/constansts/color_manager.dart';
 import 'package:bobo_food/core/constansts/icon_manager.dart';
 import 'package:bobo_food/core/constansts/style_manager.dart';
+import 'package:bobo_food/core/route/route_name.dart';
+import 'package:bobo_food/presentation/widgets/custom_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -109,12 +111,57 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
               SizedBox(height: 16.h),
-              _buildProfileItem(IconManager.profile, "My Account"),
-              _buildProfileItem(IconManager.list, "My Orders"),
-              _buildProfileItem(IconManager.creditCard, "Payment"),
-              _buildProfileItem(IconManager.location, "Addresses"),
-              _buildProfileItem(IconManager.subscription, "Subscription"),
-              _buildProfileItem(IconManager.settings, "Settings"),
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, RouteName.myAccountScreen);
+                },
+                child: CustomItem(
+                  icon: IconManager.profile,
+                  title: "My Account",
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, RouteName.myOrderScreen);
+                },
+                child: CustomItem(icon: IconManager.list, title: "My Orders"),
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, RouteName.paymentScreen);
+                },
+                child: CustomItem(
+                  icon: IconManager.creditCard,
+                  title: "Payment",
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, RouteName.addressScreen);
+                },
+                child: CustomItem(
+                  icon: IconManager.location,
+                  title: "Addresses",
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, RouteName.subScriptionScreen);
+                },
+                child: CustomItem(
+                  icon: IconManager.subscription,
+                  title: "Subscription",
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, RouteName.settingsScreen);
+                },
+                child: CustomItem(
+                  icon: IconManager.settings,
+                  title: "Settings",
+                ),
+              ),
 
               SizedBox(height: 30.h),
 
@@ -164,38 +211,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  // Reusable helper for profile menu items
-  Widget _buildProfileItem(String icon, String title) {
-    return Container(
-      margin: EdgeInsets.only(bottom: 12.h),
-      padding: EdgeInsets.all(16.w),
-      decoration: BoxDecoration(
-        color: ColorManager.grey50,
-        borderRadius: BorderRadius.circular(12.r),
-      ),
-      child: Row(
-        children: [
-          SvgPicture.asset(
-            icon,
-            width: 24.w,
-            height: 24.h,
-            color: ColorManager.grey600,
-          ),
-          SizedBox(width: 16.w),
-          Text(
-            title,
-            style: getRegularStyle16_400(
-              color: ColorManager.typography500,
-              fontSize: 15.sp,
-            ),
-          ),
-          const Spacer(),
-          SvgPicture.asset(IconManager.arrowRight),
-        ],
       ),
     );
   }

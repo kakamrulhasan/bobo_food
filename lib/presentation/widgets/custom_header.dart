@@ -10,12 +10,18 @@ class CustomHeader extends StatelessWidget {
   final String? middleTitle;
   final String? endTitle;
   final Color? endTitleColor;
+  final VoidCallback? onTapEndTitle;
+  final Widget? endIcon;
+  final VoidCallback? endIconOnTap;
   const CustomHeader({
     super.key,
     this.leadTitle,
     this.middleTitle,
     this.endTitle,
     this.endTitleColor,
+    this.onTapEndTitle,
+    this.endIcon,
+    this.endIconOnTap,
   });
 
   @override
@@ -81,14 +87,19 @@ class CustomHeader extends StatelessWidget {
                 ),
               ),
         // ============= End Section ================
-        endTitle != null
-            ? Text(
-                endTitle!,
-                style: getBoldStyle24(
-                  color: endTitleColor != null
-                      ? endTitleColor!
-                      : ColorManager.primary600,
-                  fontSize: 15.sp,
+        endIcon != null
+            ? InkWell(onTap: endIconOnTap, child: endIcon!)
+            : endTitle != null
+            ? InkWell(
+                onTap: onTapEndTitle,
+                child: Text(
+                  endTitle!,
+                  style: getBoldStyle24(
+                    color: endTitleColor != null
+                        ? endTitleColor!
+                        : ColorManager.primary700,
+                    fontSize: 15.sp,
+                  ),
                 ),
               )
             : Text('      '),
