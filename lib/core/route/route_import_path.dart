@@ -17,8 +17,11 @@ import 'package:bobo_food/presentation/cart/orederPlaced/view/order_placed_scree
 import 'package:bobo_food/presentation/cart/view/cart_empty_screen.dart';
 import 'package:bobo_food/presentation/home/view/home_screen.dart';
 import 'package:bobo_food/presentation/onBoarding/view/on_boarding_screen.dart';
+import 'package:bobo_food/presentation/profile/address/editAddress/view/edit_address_screen.dart';
 import 'package:bobo_food/presentation/profile/address/view/address_screen.dart';
 import 'package:bobo_food/presentation/profile/myAccount/view/my_account_screen.dart';
+import 'package:bobo_food/presentation/profile/payment/addCard/view/add_card_screen.dart';
+import 'package:bobo_food/presentation/profile/payment/editCard/view/edit_card_screen.dart';
 import 'package:bobo_food/presentation/profile/payment/view/payment_screen.dart';
 import 'package:bobo_food/presentation/profile/view/profile_screen.dart';
 import 'package:bobo_food/presentation/profile/subscription/view/sub_scription_screen.dart';
