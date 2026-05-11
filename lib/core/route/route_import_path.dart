@@ -1,3 +1,4 @@
+import 'package:bobo_food/core/constansts/color_manager.dart';
 import 'package:bobo_food/presentation/auth/signIn/ForgetByEmail/view/forget_by_email.dart';
 import 'package:bobo_food/presentation/auth/signIn/ForgetOTP/view/forget_otp_screen.dart';
 import 'package:bobo_food/presentation/auth/signIn/newPassword/view/create_new_pass_screen.dart';
@@ -16,11 +17,17 @@ import 'package:bobo_food/presentation/cart/orederPlaced/view/order_placed_scree
 import 'package:bobo_food/presentation/cart/view/cart_empty_screen.dart';
 import 'package:bobo_food/presentation/home/view/home_screen.dart';
 import 'package:bobo_food/presentation/onBoarding/view/on_boarding_screen.dart';
+import 'package:bobo_food/presentation/profile/address/view/address_screen.dart';
+import 'package:bobo_food/presentation/profile/myAccount/view/my_account_screen.dart';
+import 'package:bobo_food/presentation/profile/payment/view/payment_screen.dart';
 import 'package:bobo_food/presentation/profile/view/profile_screen.dart';
-import 'package:bobo_food/presentation/subscription/view/sub_scription_screen.dart';
+import 'package:bobo_food/presentation/profile/subscription/view/sub_scription_screen.dart';
 import 'package:flutter/material.dart';
 import '../../presentation/auth/signup/ForgetByEmail/view/sign_up_forget_by_email.dart';
 import '../../presentation/auth/signup/newProfile/view/create_new_profile.dart';
+import '../../presentation/profile/myAccount/myAccountEdit/view/my_account_edit_screen.dart';
+import '../../presentation/profile/myOrder/view/my_order_screen.dart';
+import '../../presentation/profile/settings/view/settings_screen.dart';
 import '../../presentation/splash/view/splash_screen.dart';
 import 'route_name.dart';
 part 'route_config.dart';

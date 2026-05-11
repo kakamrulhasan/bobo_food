@@ -41,6 +41,7 @@ class IconManager {
   static String profile = '$baseUrl/profile.svg';
   static String settings = '$baseUrl/settings.svg';
   static String subscription = '$baseUrl/subscription.svg';
+  static String dot = '$baseUrl/threeDot.svg';
   // ===================== Bottom Nav =======================
   static String cart = '$baseUrl/cart.svg';
   static String love = '$baseUrl/love.svg';

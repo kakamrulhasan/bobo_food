@@ -23,4 +23,10 @@ class RouteName {
   static const String noCouponAdded = '/noCoupon';
   static const String orderPlacedScreen = '/orderPlaced';
   static const String profileScreen = '/profileScreen';
+  static const String addressScreen = '/addressScreen';
+  static const String myAccountScreen = '/myAccountScreen';
+  static const String myAccountEditScreen = '/myAccountEditScreen';
+  static const String myOrderScreen = '/myOrderScreen';
+  static const String paymentScreen = '/paymentScreen';
+  static const String settingsScreen = '/settingsScreen';
 }

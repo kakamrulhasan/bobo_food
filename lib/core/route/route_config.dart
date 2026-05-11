@@ -51,11 +51,25 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => OrderPlacedScreen());
       case RouteName.profileScreen:
         return MaterialPageRoute(builder: (context) => ProfileScreen());
+      case RouteName.addressScreen:
+        return MaterialPageRoute(builder: (context) => AddressScreen());
+      case RouteName.myAccountScreen:
+        return MaterialPageRoute(builder: (context) => MyAccountScreen());
+      case RouteName.myAccountEditScreen:
+        return MaterialPageRoute(builder: (context) => MyAccountEditScreen());
+      case RouteName.myOrderScreen:
+        return MaterialPageRoute(builder: (context) => MyOrderScreen());
+      case RouteName.paymentScreen:
+        return MaterialPageRoute(builder: (context) => PaymentScreen());
+      case RouteName.settingsScreen:
+        return MaterialPageRoute(builder: (context) => SettingsScreen());
 
       default:
         return MaterialPageRoute(
-          builder: (context) =>
-              const Scaffold(body: Center(child: Text('No Screen Found!'))),
+          builder: (context) => const Scaffold(
+            backgroundColor: ColorManager.whiteColor,
+            body: Center(child: Text('No Screen Found!')),
+          ),
         );
     }
   }
