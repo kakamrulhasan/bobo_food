@@ -49,6 +49,7 @@ class IconManager {
   static String privacy = '$baseUrl/privacy.svg';
   static String twoArrow = '$baseUrl/switch.svg';
   static String terms = '$baseUrl/terms.svg';
+  static String send = '$baseUrl/send.svg';
   // ===================== Bottom Nav =======================
   static String cart = '$baseUrl/cart.svg';
   static String love = '$baseUrl/love.svg';

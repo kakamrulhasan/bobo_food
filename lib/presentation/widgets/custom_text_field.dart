@@ -8,7 +8,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 class CustomTextField extends StatefulWidget {
   final TextEditingController? controller;
   final String hintText;
-  final Widget? prefixIcon;
+  final String? prefixIcon;
   final String? suffixIcon;
 
   final bool isPassword;
@@ -65,7 +65,29 @@ class _CustomTextFieldState extends State<CustomTextField> {
             color: ColorManager.typography200,
             fontSize: 15.sp,
           ),
-          prefixIcon: widget.prefixIcon,
+          prefixIcon: widget.isPassword
+              ? GestureDetector(
+                  onTap: toggleVisibility,
+                  child: Padding(
+                    padding: EdgeInsets.all(12.w),
+                    child: SvgPicture.asset(
+                      isObscure ? IconManager.eyeClose : IconManager.eyeOpen,
+                      width: 20.w,
+                      height: 14.h,
+                    ),
+                  ),
+                )
+              : widget.prefixIcon != null
+              ? Padding(
+                  padding: EdgeInsets.all(12.w),
+                  child: SvgPicture.asset(
+                    widget.prefixIcon!,
+                    width: 20.w,
+                    height: 14.h,
+                  ),
+                )
+              : null,
+
           suffixIcon: widget.isPassword
               ? GestureDetector(
                   onTap: toggleVisibility,
