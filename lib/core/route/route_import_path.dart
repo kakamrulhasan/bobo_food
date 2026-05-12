@@ -23,6 +23,7 @@ import 'package:bobo_food/presentation/profile/myAccount/view/my_account_screen.
 import 'package:bobo_food/presentation/profile/payment/addCard/view/add_card_screen.dart';
 import 'package:bobo_food/presentation/profile/payment/editCard/view/edit_card_screen.dart';
 import 'package:bobo_food/presentation/profile/payment/view/payment_screen.dart';
+import 'package:bobo_food/presentation/profile/settings/accountDelete/view/account_delete_screen.dart';
 import 'package:bobo_food/presentation/profile/settings/customerSupport/view/customer_support_screen.dart';
 import 'package:bobo_food/presentation/profile/settings/language/view/language_screen.dart';
 import 'package:bobo_food/presentation/profile/view/profile_screen.dart';

@@ -2,6 +2,7 @@ import 'package:bobo_food/core/constansts/color_manager.dart';
 import 'package:bobo_food/core/constansts/icon_manager.dart';
 import 'package:bobo_food/core/constansts/style_manager.dart';
 import 'package:bobo_food/core/route/route_name.dart';
+import 'package:bobo_food/presentation/widgets/custom_button.dart';
 import 'package:bobo_food/presentation/widgets/custom_header.dart';
 import 'package:bobo_food/presentation/widgets/custom_item.dart';
 import 'package:bobo_food/presentation/widgets/custom_toggle.dart';
@@ -79,8 +80,92 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 ),
               ),
               SizedBox(height: 15.h),
-              CustomItem(title: 'Delete Account', icon: IconManager.delete),
-              CustomItem(title: 'Log out', icon: IconManager.logout),
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, RouteName.accountDeleteScreen);
+                },
+                child: CustomItem(
+                  title: 'Delete Account',
+                  icon: IconManager.delete,
+                ),
+              ),
+              InkWell(
+                splashColor: ColorManager.transparentColor,
+                highlightColor: ColorManager.transparentColor,
+                onTap: () {
+                  _showLogoutDialog(context);
+                },
+                child: CustomItem(title: 'Log out', icon: IconManager.logout),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _showLogoutDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => Dialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(28.r),
+        ),
+        backgroundColor: ColorManager.whiteColor,
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 24.h),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Are you sure?',
+                style: getBoldStyle24(
+                  fontSize: 22.sp,
+                  fontWeight: FontWeight.bold,
+                  color: ColorManager.typography500,
+                ),
+              ),
+              SizedBox(height: 12.h),
+              Text(
+                'Are you sure, you want to log out from this account?',
+                style: getRegularStyle16_400(
+                  fontSize: 15.sp,
+                  color: ColorManager.typography500,
+                ),
+              ),
+              SizedBox(height: 28.h),
+              Row(
+                children: [
+                  // Cancel Button
+                  Expanded(
+                    child: CustomButton(
+                      text: 'Cancel',
+                      textColor: ColorManager.typography500,
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      backgroundColor: ColorManager.transparentColor,
+                      borderColor: ColorManager.grey200,
+                    ),
+                  ),
+                  SizedBox(width: 12.w),
+                  // Logout Button
+                  Expanded(
+                    child: CustomButton(
+                      text: 'Logout',
+                      onPressed: () {
+                        Navigator.pushNamedAndRemoveUntil(
+                          context,
+                          RouteName.loginScreen,
+                          (route) => false,
+                        );
+                      },
+                      backgroundColor: ColorManager.redColor,
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
