@@ -32,4 +32,5 @@ class RouteName {
   static const String addCardScreen = '/addCardScreen';
   static const String editCardScreen = '/editCardScreen';
   static const String editAddressScreen = '/editAddressScreen';
+  static const String languageScreen = '/languageScreen';
 }

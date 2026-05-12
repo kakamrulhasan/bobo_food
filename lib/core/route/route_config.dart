@@ -69,6 +69,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => EditCardScreen());
       case RouteName.editAddressScreen:
         return MaterialPageRoute(builder: (context) => EditAddressScreen());
+      case RouteName.languageScreen:
+        return MaterialPageRoute(builder: (context) => LanguageScreen());
 
       default:
         return MaterialPageRoute(

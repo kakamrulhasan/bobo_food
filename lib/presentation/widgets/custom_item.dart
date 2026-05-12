@@ -9,7 +9,8 @@ import '../../core/constansts/style_manager.dart';
 class CustomItem extends StatelessWidget {
   final String? icon;
   final String title;
-  const CustomItem({super.key, this.icon, required this.title});
+  final String? endTitle;
+  const CustomItem({super.key, this.icon, required this.title, this.endTitle});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +41,21 @@ class CustomItem extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          SvgPicture.asset(IconManager.arrowRight),
+          Row(
+            children: [
+              (endTitle != null)
+                  ? Text(
+                      endTitle!,
+                      style: getRegularStyle16_400(
+                        color: ColorManager.typography500,
+                        fontSize: 15.sp,
+                      ),
+                    )
+                  : Text(''),
+              SizedBox(width: 5.w),
+              SvgPicture.asset(IconManager.arrowRight),
+            ],
+          ),
         ],
       ),
     );
