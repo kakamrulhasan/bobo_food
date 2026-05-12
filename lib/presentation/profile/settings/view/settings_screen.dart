@@ -60,7 +60,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
               SizedBox(height: 15.h),
               CustomItem(title: 'Privacy Policy', icon: IconManager.privacy),
-              CustomItem(title: 'Customer', icon: IconManager.message),
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, RouteName.customerSupportScreen);
+                },
+                child: CustomItem(
+                  title: 'Customer Support',
+                  icon: IconManager.message,
+                ),
+              ),
               CustomItem(title: 'Terms & Conditions', icon: IconManager.terms),
               SizedBox(height: 5.h),
               Text(

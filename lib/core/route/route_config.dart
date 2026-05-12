@@ -71,6 +71,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => EditAddressScreen());
       case RouteName.languageScreen:
         return MaterialPageRoute(builder: (context) => LanguageScreen());
+      case RouteName.customerSupportScreen:
+        return MaterialPageRoute(builder: (context) => CustomerSupportScreen());
 
       default:
         return MaterialPageRoute(

@@ -33,4 +33,5 @@ class RouteName {
   static const String editCardScreen = '/editCardScreen';
   static const String editAddressScreen = '/editAddressScreen';
   static const String languageScreen = '/languageScreen';
+  static const String customerSupportScreen = '/customerSupportScreen';
 }
