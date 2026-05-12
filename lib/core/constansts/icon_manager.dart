@@ -42,6 +42,13 @@ class IconManager {
   static String settings = '$baseUrl/settings.svg';
   static String subscription = '$baseUrl/subscription.svg';
   static String dot = '$baseUrl/threeDot.svg';
+  static String delete = '$baseUrl/delete.svg';
+  static String language = '$baseUrl/language.svg';
+  static String logout = '$baseUrl/logout.svg';
+  static String message = '$baseUrl/message.svg';
+  static String privacy = '$baseUrl/privacy.svg';
+  static String twoArrow = '$baseUrl/switch.svg';
+  static String terms = '$baseUrl/terms.svg';
   // ===================== Bottom Nav =======================
   static String cart = '$baseUrl/cart.svg';
   static String love = '$baseUrl/love.svg';
