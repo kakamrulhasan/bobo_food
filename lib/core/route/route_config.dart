@@ -73,6 +73,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => LanguageScreen());
       case RouteName.customerSupportScreen:
         return MaterialPageRoute(builder: (context) => CustomerSupportScreen());
+      case RouteName.accountDeleteScreen:
+        return MaterialPageRoute(builder: (context) => AccountDeleteScreen());
 
       default:
         return MaterialPageRoute(
